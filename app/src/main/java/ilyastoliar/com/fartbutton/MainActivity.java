@@ -10,13 +10,15 @@ import java.util.Random;
 
 public class MainActivity extends Activity {
 
+
+    
     ImageButton button;
     Random rand = new Random();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-        super.onCreate(savedInstanceState);;
+        super.onCreate(savedInstanceState);
         StartAppSDK.init(this, "204612886", true);
         setContentView(R.layout.activity_main);
 
