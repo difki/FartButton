@@ -23,13 +23,19 @@ public class MainActivity extends Activity {
         button = (ImageButton) findViewById(R.id.button);
         final MediaPlayer mp1 = MediaPlayer.create(this, R.raw.sound1);
         final MediaPlayer mp2 = MediaPlayer.create(this, R.raw.sound2);
+        final MediaPlayer mp3 = MediaPlayer.create(this, R.raw.sound3);
+        final MediaPlayer mp4 = MediaPlayer.create(this, R.raw.sound4);
+        final MediaPlayer mp5 = MediaPlayer.create(this, R.raw.sound5);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int n = rand.nextInt(2) + 1;
+                int n = rand.nextInt(5) + 1;
                 if (n == 1) mp1.start();
                 if (n == 2) mp2.start();
+                if (n == 3) mp3.start();
+                if (n == 4) mp4.start();
+                if (n == 5) mp5.start();
             }
 
         });
