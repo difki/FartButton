@@ -31,17 +31,21 @@ public class MainActivity extends Activity {
         final MediaPlayer mp4 = MediaPlayer.create(this, R.raw.sound4);
         final MediaPlayer mp5 = MediaPlayer.create(this, R.raw.sound5);
         final MediaPlayer mp6 = MediaPlayer.create(this, R.raw.sound6);
+        final MediaPlayer mp7 = MediaPlayer.create(this, R.raw.sound7);
+        final MediaPlayer mp8 = MediaPlayer.create(this, R.raw.sound8);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int n = rand.nextInt(6) + 1;
+                int n = rand.nextInt(8) + 1;
                 if (n == 1) mp1.start();
                 if (n == 2) mp2.start();
                 if (n == 3) mp3.start();
                 if (n == 4) mp4.start();
                 if (n == 5) mp5.start();
                 if (n == 6) mp6.start();
+                if (n == 7) mp7.start();
+                if (n == 8) mp8.start();
             }
 
         });
