@@ -33,11 +33,14 @@ public class MainActivity extends Activity {
         final MediaPlayer mp6 = MediaPlayer.create(this, R.raw.sound6);
         final MediaPlayer mp7 = MediaPlayer.create(this, R.raw.sound7);
         final MediaPlayer mp8 = MediaPlayer.create(this, R.raw.sound8);
+        final MediaPlayer mp9 = MediaPlayer.create(this, R.raw.sound9);
+        final MediaPlayer mp10 = MediaPlayer.create(this, R.raw.sound10);
+        final MediaPlayer mp11 = MediaPlayer.create(this, R.raw.sound11);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int n = rand.nextInt(8) + 1;
+                int n = rand.nextInt(11) + 1;
                 if (n == 1) mp1.start();
                 if (n == 2) mp2.start();
                 if (n == 3) mp3.start();
@@ -46,6 +49,9 @@ public class MainActivity extends Activity {
                 if (n == 6) mp6.start();
                 if (n == 7) mp7.start();
                 if (n == 8) mp8.start();
+                if (n == 9) mp9.start();
+                if (n == 10) mp10.start();
+                if (n == 11) mp11.start();
             }
 
         });
